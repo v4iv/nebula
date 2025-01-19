@@ -14,7 +14,11 @@ const t = useTranslations(lang)
       <div class="grid grid-cols-2">
         <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
           <!-- logo -->
-          <img class="size-full invert md:w-60" src={tlcb.src} />
+          <img
+            src={tlcb.src}
+            alt={t("navbar.titleShort")}
+            class="size-full invert md:w-60"
+          />
 
           <!-- tagline -->
           <p class="truncate text-center font-serif text-white md:text-left">
@@ -69,9 +73,9 @@ const t = useTranslations(lang)
           <!-- cookie intimation -->
           <p class="text-sm text-white">{t("footer.cookieConsent")}</p>
 
-          <!-- spritesheet -->
-          <div class="my-3 hidden justify-end md:flex">
-            <span class="easter-egg"></span>
+          <!-- easter egg -->
+          <div class="my-4 flex justify-center">
+            <span aria-label="Easter Egg" class="easter-egg"></span>
           </div>
         </div>
       </div>
@@ -136,10 +140,10 @@ const t = useTranslations(lang)
 <style>
   .easter-egg {
     position: absolute;
-    background: url("../assets/pixelspritesheet.png") 0 0 / cover;
-    height: 50px;
-    width: 50px;
-    /* scale: 0.6; */
+    background: url("../assets/easter-egg.png") 0 0 / cover;
+    height: 48px;
+    width: 48px;
+    scale: 0.8;
     -webkit-animation: pixel 15s steps(15) infinite;
     animation: pixel 15s steps(15) infinite;
   }
@@ -149,7 +153,7 @@ const t = useTranslations(lang)
       background-position: 0 0;
     }
     to {
-      background-position: -750px 0;
+      background-position: -720px 0;
     }
   }
 
@@ -158,7 +162,7 @@ const t = useTranslations(lang)
       background-position: 0 0;
     }
     to {
-      background-position: -750px 0;
+      background-position: -720px 0;
     }
   }
 </style>
