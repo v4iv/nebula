@@ -1,0 +1,164 @@
+---
+import tlcb from "@/assets/tlcb-400-R80F-BW.svg"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<footer class="w-full">
+  <div class="min-h-60 bg-teal-300"></div>
+
+  <div class="bg-slate-950">
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div class="grid grid-cols-2">
+        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+          <!-- logo -->
+          <img class="size-full invert md:w-60" src={tlcb.src} />
+
+          <!-- tagline -->
+          <p class="truncate text-center font-serif text-white md:text-left">
+            {t("footer.tagline")}
+          </p>
+        </div>
+
+        <div class="col-span-2 flex flex-col px-3 py-5 md:col-span-1 md:py-10">
+          <!-- site links -->
+          <div class="my-5 flex flex-wrap font-mono uppercase tracking-widest">
+            <a href="/" class="text-white underline-offset-4 hover:underline">
+              {t("navbar.home")}
+            </a>
+
+            <span class="text-rose-400">&nbsp;/&nbsp;</span>
+
+            <a
+              href="/tags"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("navbar.tags")}
+            </a>
+
+            <span class="text-rose-400">&nbsp;/&nbsp;</span>
+
+            <a
+              href="/about"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("navbar.about")}
+            </a>
+
+            <span class="text-rose-400">&nbsp;/&nbsp;</span>
+
+            <a
+              href="/contact"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("navbar.contact")}
+            </a>
+
+            <span class="text-rose-400">&nbsp;/&nbsp;</span>
+
+            <a
+              href="/sitemap-index.xml"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("seo.sitemap")}
+            </a>
+          </div>
+
+          <!-- cookie intimation -->
+          <p class="text-sm text-white">{t("footer.cookieConsent")}</p>
+
+          <!-- spritesheet -->
+          <div class="my-3 hidden justify-end md:flex">
+            <span class="easter-egg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 items-center">
+        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+          <!-- socials -->
+          <div
+            class="flex flex-wrap font-mono text-xs uppercase tracking-widest"
+          >
+            <span class="uppercase text-teal-300">
+              {t("social.follow")}&nbsp;&nbsp;
+            </span>
+
+            <a
+              target="_blank"
+              rel="noreferrer nofollow"
+              href="https://waybove.bsky.social"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("social.bluesky")}
+            </a>
+            <span class="text-yellow-400">&nbsp;/&nbsp;</span>
+            <a
+              target="_blank"
+              rel="noreferrer nofollow"
+              href="https://github.com/v4iv"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("social.github")}
+            </a>
+            <span class="text-yellow-400">&nbsp;/&nbsp;</span>
+            <a
+              target="_blank"
+              rel="noreferrer nofollow"
+              href="https://instagram.com/mildlyzen"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("social.instagram")}
+            </a>
+            <span class="text-yellow-400">&nbsp;/&nbsp;</span>
+            <a
+              href="/rss.xml"
+              class="text-white underline-offset-4 hover:underline"
+            >
+              {t("social.rss")}
+            </a>
+          </div>
+        </div>
+
+        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+          <!-- copyright -->
+          <p class="font-mono text-white">
+            {t("footer.copyright")}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .easter-egg {
+    position: absolute;
+    background: url("../assets/pixelspritesheet.png") 0 0 / cover;
+    height: 50px;
+    width: 50px;
+    /* scale: 0.6; */
+    -webkit-animation: pixel 15s steps(15) infinite;
+    animation: pixel 15s steps(15) infinite;
+  }
+
+  @-webkit-keyframes pixel {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -750px 0;
+    }
+  }
+
+  @keyframes pixel {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -750px 0;
+    }
+  }
+</style>

@@ -8,10 +8,12 @@ const t = useTranslations(lang)
 
 <Layout>
   <main
-    class="fourofour mx-auto flex min-h-screen w-full max-w-screen-xl items-center justify-center bg-contain bg-center bg-no-repeat"
+    class="fourofour pointer-events-none mx-auto flex min-h-screen w-full max-w-screen-xl items-center justify-center bg-contain bg-center bg-no-repeat"
   >
     <header>
-      <h1 class="font-mono text-5xl lowercase">{t("404.pageNotFound")}</h1>
+      <h1 class="font-mono text-3xl lowercase md:text-5xl">
+        {t("404.pageNotFound")}
+      </h1>
     </header>
   </main>
 </Layout>
@@ -19,5 +21,6 @@ const t = useTranslations(lang)
 <style>
   .fourofour {
     background-image: url("../assets/404.svg");
+    z-index: -10;
   }
 </style>

@@ -4,6 +4,7 @@ import { ClientRouter } from "astro:transitions"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import BaseHead from "@/components/BaseHead.astro"
 import Header from "@/components/Header.astro"
+import Footer from "@/components/Footer.astro"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -42,5 +43,6 @@ const t = useTranslations(lang)
   <body class="min-h-screen bg-background antialiased">
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>

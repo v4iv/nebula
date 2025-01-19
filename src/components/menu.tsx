@@ -81,7 +81,7 @@ export function MenuButton({
             className="w-full justify-start border-b-white px-2 text-3xl text-white hover:bg-transparent hover:text-teal-300 dark:border-b-white"
             asChild
           >
-            <a className="flex justify-between" href="/">
+            <a className="flex justify-between" href="/tags">
               <span>{t("navbar.tags")}</span> <Hash />
             </a>
           </Button>
@@ -92,7 +92,7 @@ export function MenuButton({
             className="w-full justify-start border-b-white px-2 text-3xl text-white hover:bg-transparent hover:text-teal-300 dark:border-b-white"
             asChild
           >
-            <a className="flex justify-between" href="/">
+            <a className="flex justify-between" href="/about">
               <span>{t("navbar.about")}</span> <MessageCircle />
             </a>
           </Button>
@@ -103,12 +103,13 @@ export function MenuButton({
             className="w-full justify-start border-b-white px-2 text-3xl text-white hover:bg-transparent hover:text-teal-300 dark:border-b-white"
             asChild
           >
-            <a className="flex justify-between" href="/">
+            <a className="flex justify-between" href="/contact">
               <span>{t("navbar.contact")}</span> <AtSign />
             </a>
           </Button>
         </div>
         <SheetFooter>
+          {/* socials */}
           <div className="flex w-full justify-between">
             <Button
               size="icon"

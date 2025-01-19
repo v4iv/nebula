@@ -24,11 +24,16 @@ export const ui = {
     "search.placeholder": "Search...",
     "search.noResults": "No results found.",
     "search.suggestions": "Suggestions",
+    "seo.sitemap": "Sitemap",
+    "social.follow": "Follow Me",
     "social.bluesky": "Bluesky",
     "social.github": "GitHub",
     "social.instagram": "Instagram",
     "social.rss": "RSS Feed",
-    "footer.copyright": `Copyright © ${new Date().getFullYear()} • All Rights Reserved.`,
+    "footer.tagline": "a brew of awesomeness with a pinch of magic...",
+    "footer.cookieConsent":
+      "This website uses cookies which are used to collect anonymous information to improve your browsing experience and for analytics and metrics.",
+    "footer.copyright": `Copyright © 2018-${new Date().getFullYear()} • The Leaky Cauldron Blog • All Rights Reserved.`,
     "404.pageNotFound": "Page Not Found",
   },
 } as const
