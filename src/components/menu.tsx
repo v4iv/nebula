@@ -1,8 +1,8 @@
 import React from "react"
 import { AtSign, Hash, House, MessageCircle, Plus, Rss, X } from "lucide-react"
 
-import { defaultLang, type languages } from "@/i18n/ui"
 import { useTranslations } from "@/i18n/utils"
+import { defaultLang, type languages } from "@/i18n/ui"
 import {
   Sheet,
   SheetClose,
@@ -56,7 +56,7 @@ export function MenuButton({
               <span className="sr-only">{t("navbar.close")}</span>
             </SheetClose>
           </SheetTitle>
-          <SheetDescription className="flex w-full justify-center py-2 font-mono sm:text-lg md:text-2xl">
+          <SheetDescription className="flex w-full justify-center py-2 font-mono text-lg md:text-2xl">
             <span className="animate-gradient truncate break-words bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.cyan.300),theme(colors.sky.400),theme(colors.yellow.400),theme(colors.rose.400),theme(colors.teal.400),theme(colors.indigo.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
               {t("navbar.app")}
             </span>

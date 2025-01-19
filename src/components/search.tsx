@@ -1,8 +1,8 @@
 import React from "react"
 import { Search } from "lucide-react"
 
-import { defaultLang, type languages } from "@/i18n/ui"
 import { useTranslations } from "@/i18n/utils"
+import { defaultLang, type languages } from "@/i18n/ui"
 import {
   CommandDialog,
   CommandEmpty,
