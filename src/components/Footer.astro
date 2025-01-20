@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets"
+
 import tlcb from "@/assets/tlcb-400-R80F-BW.svg"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 
@@ -14,8 +16,8 @@ const t = useTranslations(lang)
       <div class="grid grid-cols-2">
         <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
           <!-- logo -->
-          <img
-            src={tlcb.src}
+          <Image
+            src={tlcb}
             alt={t("navbar.titleShort")}
             class="size-full invert md:w-60"
           />
@@ -72,11 +74,6 @@ const t = useTranslations(lang)
 
           <!-- cookie intimation -->
           <p class="text-sm text-white">{t("footer.cookieConsent")}</p>
-
-          <!-- easter egg -->
-          <div class="my-4 flex justify-center">
-            <span aria-label="Easter Egg" class="easter-egg"></span>
-          </div>
         </div>
       </div>
 
@@ -133,6 +130,11 @@ const t = useTranslations(lang)
           </p>
         </div>
       </div>
+    </div>
+
+    <!-- easter egg -->
+    <div class="flex justify-end">
+      <span class="easter-egg"></span>
     </div>
   </div>
 </footer>

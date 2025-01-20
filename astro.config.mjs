@@ -15,5 +15,6 @@ export default defineConfig({
   },
   experimental: {
     responsiveImages: true,
+    contentIntellisense: true,
   },
 })
