@@ -35,6 +35,9 @@ importers:
       astro:
         specifier: ^5.1.7
         version: 5.1.7(@types/node@22.10.7)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0)
+      astro-loading-indicator:
+        specifier: ^0.7.0
+        version: 0.7.0(astro@5.1.7(@types/node@22.10.7)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1215,6 +1218,11 @@ packages:
   astro-eslint-parser@1.1.0:
     resolution: {integrity: sha512-F6NW1RJo5pp2kPnnM97M5Ohw8zAGjv83MpxHqfAochH68n/kiXN57+hYaNUCA7XkScoVNr6yzvly3hsY34TGfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  astro-loading-indicator@0.7.0:
+    resolution: {integrity: sha512-oNSUYbHq8Aaol0zcVuBzGz+qrqKsviOvKl1xaaKo3DLkEef7HCzHQAgTgWv4lB1iYFWa5GaieQvlxBO4KjzKZg==}
+    peerDependencies:
+      astro: ^4.0.0 || ^5.0.0
 
   astro@5.1.7:
     resolution: {integrity: sha512-hGYHtO+67ZWDl0TY9ysh2iBv2KOgcgvpFJaMGZvknqBjh6TGqrwtWldCsJr1CK57rK8ycpPwC3Bi5bPaBELMuw==}
@@ -4382,6 +4390,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  astro-loading-indicator@0.7.0(astro@5.1.7(@types/node@22.10.7)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0)):
+    dependencies:
+      astro: 5.1.7(@types/node@22.10.7)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0)
 
   astro@5.1.7(@types/node@22.10.7)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
