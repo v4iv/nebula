@@ -1,6 +1,7 @@
 import React from "react"
 import { AtSign, Hash, House, MessageCircle, Plus, Rss, X } from "lucide-react"
 
+import tclb from "@/assets/tlcb-400-R80F-BW.svg"
 import { useTranslations } from "@/i18n/utils"
 import { defaultLang, type languages } from "@/i18n/ui"
 import {
@@ -47,6 +48,12 @@ export function MenuButton({
         className="flex flex-col border-l-teal-300 bg-gradient-to-t from-indigo-600 to-violet-700"
         sheetCloseVisible={false}
       >
+        {/* tlcb background */}
+        <div
+          style={{ backgroundImage: `url('${tclb.src}')` }}
+          className="absolute -top-1/4 right-0 -z-10 h-[283px] w-[834px] origin-bottom-right -rotate-90 transform bg-cover bg-no-repeat opacity-20"
+        />
+
         <SheetHeader>
           <SheetTitle className="flex items-center space-x-2">
             <SearchField lang={lang} />
@@ -63,7 +70,7 @@ export function MenuButton({
           </SheetDescription>
         </SheetHeader>
 
-        <div className="flex grow flex-col space-y-10 py-10">
+        <div className="flex grow flex-col space-y-10 py-10 font-mono">
           <Button
             size="lg"
             variant="ghost"
@@ -108,6 +115,7 @@ export function MenuButton({
             </a>
           </Button>
         </div>
+
         <SheetFooter>
           {/* socials */}
           <div className="flex w-full justify-between">
