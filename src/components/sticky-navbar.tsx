@@ -39,7 +39,7 @@ export default function StickyNavBar({
                 href="/"
                 className="truncate break-words bg-gradient-to-r from-yellow-400 via-rose-400 to-violet-500 bg-clip-text font-mono text-3xl font-extrabold tracking-wider text-transparent"
               >
-                {t("navbar.titleShort")}
+                {t("navbar.short-name")}
               </a>
             </div>
 

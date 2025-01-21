@@ -37,7 +37,7 @@ function SearchBox({
       </DialogHeader>
       <CommandInput placeholder={t("search.placeholder")} />
       <CommandList aria-describedby="">
-        <CommandEmpty>{t("search.noResults")}</CommandEmpty>
+        <CommandEmpty>{t("search.no-results")}</CommandEmpty>
         <CommandGroup heading={t("search.suggestions")}>
           <CommandItem>{t("navbar.tags")}</CommandItem>
           <CommandItem>{t("navbar.about")}</CommandItem>

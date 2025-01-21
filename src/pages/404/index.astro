@@ -12,14 +12,14 @@ const t = useTranslations(lang)
 const optimizedBackground = await getImage({ src: fourohfour })
 ---
 
-<BaseLayout title={`${t("404.pageNotFound")} | ${SITE_TITLE}`}>
+<BaseLayout title={`${t("404.page-not-found")} | ${SITE_TITLE}`}>
   <main
     style={`background-image: url(${optimizedBackground.src});`}
     class="pointer-events-none mx-auto flex min-h-screen w-full max-w-screen-xl items-center justify-center bg-contain bg-center bg-no-repeat"
   >
     <header>
       <h1 class="font-mono text-3xl lowercase md:text-5xl">
-        {t("404.pageNotFound")}
+        {t("404.page-not-found")}
       </h1>
     </header>
   </main>
