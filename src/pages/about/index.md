@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/AboutLayout.astro
 title: About This Blog
-description: A brew of awesomeness with a pinch of magic...
-cover: /src/assets/media/vaibhav.jpeg
+subtitle: A brew of awesomeness with a pinch of magic...
+description: The Leaky Cauldron Blog is the personal blog of Vaibhav Sharma. Topics include coding, movies, music, books, dinosaurs or anything under the sun and beyond.
 author: The Leaky Cauldron Blog
+cover: /src/assets/media/about.jpeg
 ---
 
 **The Leaky Cauldron Blog** is the personal blog of **Vaibhav Sharma**.

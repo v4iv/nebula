@@ -35,5 +35,12 @@ export const ui = {
       "This website uses cookies which are used to collect anonymous information to improve your browsing experience and for analytics and metrics.",
     "footer.copyright": `Copyright © 2018-${new Date().getFullYear()} • The Leaky Cauldron Blog • All Rights Reserved.`,
     "404.pageNotFound": "Page Not Found",
+    "tags.title": "Tags",
+    "tags.subtitle": "Discover articles by title",
+    "tags.description": SITE_DESCRIPTION,
+    "contact.title": "Contact Us",
+    "contact.subtitle": "Have a Question? Feel Free To Drop A Mail",
+    "contact.description":
+      "Contact Vaibhav Sharma if you have any queries or if you need some help with something related to a blog post, don't forget to include the blog post url in the mail. Please don't try to sell.",
   },
 } as const

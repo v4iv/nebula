@@ -1,14 +1,20 @@
 ---
+import about from "@/assets/media/about.jpeg"
+import { SITE_TITLE } from "@/lib/constants"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Prose from "@/components/Prose.astro"
 import FrontmatterImage from "@/components/FrontmatterImage.astro"
 
 const {
-  frontmatter: { title, author, description, cover },
+  frontmatter: { title, subtitle, author, description, cover },
 } = Astro.props
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={`${title} | ${SITE_TITLE}`}
+  description={description}
+  image={about.src}
+>
   <main class="mx-auto min-h-screen w-full max-w-screen-xl pb-10">
     <div>
       <!-- cover image -->
@@ -40,7 +46,7 @@ const {
 
         <p class="font-mono text-teal-300 md:text-xl">{author}</p>
 
-        <p class="text-white md:text-xl">{description}</p>
+        <p class="text-white md:text-xl">{subtitle}</p>
       </header>
 
       <!-- content -->
