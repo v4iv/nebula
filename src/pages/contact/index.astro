@@ -1,6 +1,5 @@
 ---
 import contactImage from "@/assets/contact.svg"
-import { SITE_TITLE } from "@/lib/constants"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import PageHeader from "@/components/PageHeader.astro"
 import BaseLayout from "@/layouts/BaseLayout.astro"
@@ -12,7 +11,7 @@ const t = useTranslations(lang)
 ---
 
 <BaseLayout
-  title={`${t("contact.title")} | ${SITE_TITLE}`}
+  title={`${t("contact.title")}`}
   description={t("contact.description")}
 >
   <main class="mx-auto min-h-screen w-full">

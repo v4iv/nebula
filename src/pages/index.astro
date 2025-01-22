@@ -1,17 +1,29 @@
 ---
+import { getCollection } from "astro:content"
+
 import BaseLayout from "@/layouts/BaseLayout.astro"
+
+const articles = (await getCollection("articles")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+)
 ---
 
 <BaseLayout>
   <main class="mx-auto flex min-h-screen w-full max-w-screen-xl px-3">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud ex ea ex ea exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </p>
+    <ul class="mx-auto mb-10 w-full max-w-screen-lg space-y-5">
+      {
+        articles.map((article) => {
+          return (
+            <li>
+              <a href={`/article/${article.id}`}>
+                <h2 class="text-3xl">{article.data.title}</h2>
+              </a>
+
+              <p>{article.data.description}</p>
+            </li>
+          )
+        })
+      }
+    </ul>
   </main>
 </BaseLayout>

@@ -1,6 +1,6 @@
 import React from "react"
 import * as z from "zod"
-import { Loader2 } from "lucide-react"
+import { Circle } from "lucide-react"
 import { useForm, type SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 
@@ -114,7 +114,7 @@ function ContactForm({
 
               <FormControl>
                 <Input
-                  className="rounded-none font-mono animate-in slide-in-from-bottom"
+                  className="rounded-none font-mono"
                   disabled={submitDisabled}
                   {...field}
                 />
@@ -138,7 +138,7 @@ function ContactForm({
 
               <FormControl>
                 <Input
-                  className="rounded-none font-mono animate-in slide-in-from-bottom"
+                  className="rounded-none font-mono"
                   disabled={submitDisabled}
                   {...field}
                 />
@@ -162,7 +162,7 @@ function ContactForm({
 
               <FormControl>
                 <Textarea
-                  className="rounded-none font-mono animate-in slide-in-from-bottom"
+                  className="rounded-none font-mono"
                   rows={12}
                   disabled={submitDisabled}
                   {...field}
@@ -178,7 +178,7 @@ function ContactForm({
 
         <div className="mt-3 flex justify-end space-x-2">
           <Button
-            className="rounded-none font-mono text-xl uppercase animate-in zoom-in"
+            className="rounded-none font-mono text-xl uppercase"
             variant="outline"
             type="reset"
             size="lg"
@@ -190,11 +190,11 @@ function ContactForm({
 
           <Button
             size="lg"
-            className="rounded-none bg-teal-300 font-mono text-xl uppercase text-slate-950 animate-in zoom-in hover:bg-teal-800 hover:text-white"
+            className="rounded-none bg-teal-300 font-mono text-xl uppercase text-slate-950 hover:bg-teal-800 hover:text-white"
             type="submit"
             disabled={submitDisabled}
           >
-            {submitDisabled && <Loader2 className="mr-2 size-4 animate-spin" />}
+            {submitDisabled && <Circle className="mr-2 size-6 animate-ping" />}
 
             {submitDisabled ? t("contact.submitting") : t("contact.submit")}
           </Button>

@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets"
 
-import tlcb from "@/assets/tlcb-400-R80F-BW.svg"
+import tlcb from "@/assets/logo.svg"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+import { Separator } from "@/components/ui/separator"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -13,8 +14,8 @@ const t = useTranslations(lang)
 
   <div class="bg-slate-950">
     <div class="mx-auto w-full max-w-screen-xl">
-      <div class="grid grid-cols-2">
-        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+      <div class="grid grid-cols-2 px-3">
+        <div class="col-span-2 my-5 md:col-span-1 md:my-20">
           <!-- logo -->
           <Image
             src={tlcb}
@@ -28,7 +29,7 @@ const t = useTranslations(lang)
           </p>
         </div>
 
-        <div class="col-span-2 flex flex-col px-3 py-5 md:col-span-1 md:py-10">
+        <div class="col-span-2 my-5 flex flex-col md:col-span-1 md:my-20">
           <!-- site links -->
           <div class="my-5 flex flex-wrap font-mono uppercase tracking-widest">
             <a href="/" class="text-white underline-offset-4 hover:underline">
@@ -77,11 +78,13 @@ const t = useTranslations(lang)
         </div>
       </div>
 
-      <div class="grid grid-cols-2 items-center">
-        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+      <Separator />
+
+      <div class="mt-7 grid grid-cols-2 px-3">
+        <div class="col-span-2 md:col-span-1">
           <!-- socials -->
           <div
-            class="flex flex-wrap font-mono text-xs uppercase tracking-widest"
+            class="mb-5 flex flex-wrap font-mono text-xs uppercase tracking-widest"
           >
             <span class="uppercase text-teal-300">
               {t("social.follow")}&nbsp;&nbsp;
@@ -123,13 +126,24 @@ const t = useTranslations(lang)
           </div>
         </div>
 
-        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10">
+        <div class="col-span-2 md:col-span-1">
           <!-- copyright -->
-          <p class="font-mono text-white">
-            {t("footer.copyright")}
-          </p>
+          <div class="mb-5">
+            <p class="font-mono text-white">
+              {t("footer.copyright")} 2018-{new Date().getFullYear()} &bull; {
+                t("meta.title")
+              } &bull;
+              {t("footer.all-rights-reserved")}
+            </p>
+          </div>
         </div>
       </div>
+
+      <!-- <div class="grid grid-cols-2 items-center">
+        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10"></div>
+
+        <div class="col-span-2 px-3 py-5 md:col-span-1 md:py-10"></div>
+      </div> -->
     </div>
 
     <!-- easter egg -->

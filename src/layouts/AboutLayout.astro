@@ -1,6 +1,5 @@
 ---
 import about from "@/assets/media/about.jpeg"
-import { SITE_TITLE } from "@/lib/constants"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Prose from "@/components/Prose.astro"
 import FrontmatterImage from "@/components/FrontmatterImage.astro"
@@ -11,7 +10,7 @@ const {
 ---
 
 <BaseLayout
-  title={`${title} | ${SITE_TITLE}`}
+  title={`${title}`}
   description={description}
   image={about.src}
 >

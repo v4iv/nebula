@@ -3,6 +3,7 @@ import "@/styles/globals.css"
 import "@fontsource/geist-sans"
 import "@fontsource-variable/geist-mono"
 import geistSansWoff2 from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2?url"
+import geistMonoWoff2 from "@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2"
 
 interface Props {
   title: string
@@ -34,6 +35,13 @@ const { title, description, image } = Astro.props
   as="font"
   type="font/woff2"
   href={geistSansWoff2}
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={geistMonoWoff2}
   crossorigin="anonymous"
 />
 

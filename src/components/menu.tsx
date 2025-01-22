@@ -1,7 +1,7 @@
 import React from "react"
 import { AtSign, Hash, House, MessageCircle, Plus, Rss, X } from "lucide-react"
 
-import tclb from "@/assets/tlcb-400-R80F-BW.svg"
+import tclb from "@/assets/logo.svg"
 import { useTranslations } from "@/i18n/utils"
 import { defaultLang, type languages } from "@/i18n/ui"
 import {

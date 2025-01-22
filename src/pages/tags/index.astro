@@ -1,6 +1,5 @@
 ---
 import tagsImage from "@/assets/tags.svg"
-import { SITE_TITLE } from "@/lib/constants"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import PageHeader from "@/components/PageHeader.astro"
 import BaseLayout from "@/layouts/BaseLayout.astro"
@@ -10,7 +9,7 @@ const t = useTranslations(lang)
 ---
 
 <BaseLayout
-  title={`${t("tags.title")} | ${SITE_TITLE}`}
+  title={`${t("tags.title")}`}
   description={t("tags.description")}
 >
   <main class="mx-auto min-h-screen w-full">
