@@ -1,5 +1,6 @@
 ---
 import about from "@/assets/media/about.jpeg"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Prose from "@/components/Prose.astro"
 import FrontmatterImage from "@/components/FrontmatterImage.astro"
@@ -7,10 +8,13 @@ import FrontmatterImage from "@/components/FrontmatterImage.astro"
 const {
   frontmatter: { title, subtitle, author, description, cover },
 } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <BaseLayout
-  title={`${title}`}
+  title={`${title} | ${t("meta.title")}`}
   description={description}
   image={about.src}
 >

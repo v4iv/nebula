@@ -51,6 +51,7 @@ Mnemonides inpluit socios inferre deos vix inulti studio et, haud neque arte
 iter comites. **Opem mora** devolvere umbram herbas fuge, *sed superis* huic
 innumeris illa sinistro frustra?
 
+```java
     tunneling_token = adapter_in_icio(
             bootCursorTftp.progressiveInteractivePage.parityBandwidthHeader(
             internet_enterprise, editorAta), computing(num_basic_stick),
@@ -64,6 +65,7 @@ innumeris illa sinistro frustra?
         hard_bar_optical(public, 97 * 94);
     }
     menuTextWizard.ruby_software_teraflops(25);
+```
 
 ## Inventum resque
 
@@ -71,9 +73,11 @@ Suos sub Perseus dato est qui custos, *Priamoque* et iamque numina? Mihi est
 exspectanda *credulus exempla*, et cum missi dederat more annis extremo agresti
 satis, isto prolem, nunc?
 
+```javascript
     var leopard_hard_reimage = minicomputer;
     var mnemonic_midi = browser + cropRow(memoryVirus + meme, -1);
     extranet_captcha = tweenThermistorRoom;
+```
 
 Dei fixit, remittit, navis ista niveis: imagine colloque sum angues, increpuit
 adnuit Idaeo fruges: lux. Graves publica: postquam *Iove* in freta et postquam

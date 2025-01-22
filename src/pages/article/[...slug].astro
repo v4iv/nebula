@@ -6,6 +6,7 @@ import {
   render,
 } from "astro:content"
 import { Picture } from "astro:assets"
+import slugify from "slugify"
 
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Prose from "@/components/Prose.astro"
@@ -49,7 +50,7 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
             <Fragment>
               <li class="font-mono uppercase tracking-widest text-violet-600 dark:text-violet-500">
                 <a
-                  href={`/tags/${tag}`}
+                  href={`/tags/${slugify(tag)}`}
                   class="underline-offset-4 hover:underline"
                 >
                   #{tag}
@@ -90,6 +91,7 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
         alt={article.data.title}
         formats={["avif", "webp"]}
         loading="eager"
+        class="bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
       />
     </div>
 
