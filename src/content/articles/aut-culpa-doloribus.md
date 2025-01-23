@@ -3,7 +3,7 @@ title: Aut culpa doloribus ea cupiditate nesciunt
 description: Lorem ipsum dolor sit amet.
 pubDate: 2025-01-10T12:30:00.000Z
 author: vaibhav-sharma
-cover: /src/assets/media/3tkfymp.png
+cover: /src/assets/media/6y5DJ0E.jpeg
 tags:
   - lorem
   - ipsum

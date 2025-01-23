@@ -98,7 +98,7 @@ export function SearchField({
         size="lg"
         variant="outline"
         onClick={() => setOpen(!open)}
-        className="w-full cursor-text justify-start rounded-none border-none bg-violet-900 px-3 text-lg uppercase text-muted-foreground hover:bg-violet-900 hover:text-muted-foreground"
+        className="w-full cursor-text justify-start rounded-none border-none bg-indigo-800 px-3 text-lg uppercase text-muted-foreground hover:bg-indigo-800 hover:text-muted-foreground"
       >
         {t("search.placeholder")}
       </Button>

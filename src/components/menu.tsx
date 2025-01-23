@@ -45,7 +45,7 @@ export function MenuButton({
         </Button>
       </SheetTrigger>
       <SheetContent
-        className="flex flex-col border-l-teal-300 bg-gradient-to-t from-indigo-600 to-violet-700"
+        className="flex flex-col border-l-teal-300 bg-indigo-600"
         sheetCloseVisible={false}
       >
         {/* tlcb background */}
@@ -64,7 +64,7 @@ export function MenuButton({
             </SheetClose>
           </SheetTitle>
           <SheetDescription className="flex w-full justify-center py-2 font-mono text-lg md:text-2xl">
-            <span className="animate-gradient truncate break-words bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.cyan.300),theme(colors.sky.400),theme(colors.yellow.400),theme(colors.rose.400),theme(colors.teal.400),theme(colors.indigo.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
+            <span className="animate-gradient truncate break-words bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.cyan.300),theme(colors.sky.400),theme(colors.yellow.400),theme(colors.rose.400),theme(colors.teal.400),theme(colors.indigo.400))] bg-[length:200%_auto] bg-clip-text lowercase text-transparent">
               {t("navbar.app")}
             </span>
           </SheetDescription>
@@ -122,7 +122,7 @@ export function MenuButton({
             <Button
               size="icon"
               variant="outline"
-              className="rounded-none border-teal-300 bg-transparent hover:bg-violet-700"
+              className="rounded-none border-teal-300 bg-transparent hover:bg-indigo-700"
               asChild
             >
               <a
@@ -145,7 +145,7 @@ export function MenuButton({
             <Button
               size="icon"
               variant="outline"
-              className="rounded-none border-teal-300 bg-transparent hover:bg-violet-700"
+              className="rounded-none border-teal-300 bg-transparent hover:bg-indigo-700"
               asChild
             >
               <a
@@ -168,7 +168,7 @@ export function MenuButton({
             <Button
               size="icon"
               variant="outline"
-              className="rounded-none border-teal-300 bg-transparent hover:bg-violet-700"
+              className="rounded-none border-teal-300 bg-transparent hover:bg-indigo-700"
               asChild
             >
               <a
@@ -191,7 +191,7 @@ export function MenuButton({
             <Button
               size="icon"
               variant="outline"
-              className="rounded-none border-teal-300 bg-transparent hover:bg-violet-700"
+              className="rounded-none border-teal-300 bg-transparent hover:bg-indigo-700"
               asChild
             >
               <a aria-label={t("social.rss")} href="/rss.xml">

@@ -1,17 +1,13 @@
 ---
-title: 'Hello, World!'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+title: 'Hello, World! Aenean porttitor efficitur convallis'
+description: Suspendisse facilisis, mi ac scelerisque interdum, ligula ex imperdiet felis, a posuere eros justo nec sem.
 pubDate: 2025-01-20T12:30:00.000Z
 author: vaibhav-sharma
-cover: /src/assets/media/6y5DJ0E.jpeg
+cover: /src/assets/media/FUAY5i8.png
 tags:
   - lorem
   - ipsum
   - dolor
-  - sit
-  - amet
-  - consetetur
-  - adipiscing
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. *Ut non lorem diam*. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas `tortor`. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.

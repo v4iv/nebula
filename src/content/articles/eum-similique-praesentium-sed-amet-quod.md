@@ -3,7 +3,7 @@ title: Eum similique praesentium sed amet quod?
 description: Lorem ipsum dolor sit amet. Qui explicabo accusamus Est itaque a incidunt nobis et nihil nemo.
 pubDate: 2025-01-05T12:30:00.000Z
 author: vaibhav-sharma
-cover: /src/assets/media/FUAY5i8.png
+cover: /src/assets/media/3tkfymp.png
 tags:
   - lorem
   - ipsum
