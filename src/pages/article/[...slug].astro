@@ -27,7 +27,10 @@ const article = Astro.props
 
 const author = await getEntry(article.data.author)
 
-const { Content } = await render(article)
+const {
+  Content,
+  remarkPluginFrontmatter: { minutesRead },
+} = await render(article)
 
 const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
   month: "short",
@@ -63,7 +66,9 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
       </ul>
 
       <!-- title -->
-      <h1 class="mb-3 text-4xl font-extrabold md:text-5xl lg:text-6xl">
+      <h1
+        class="mb-3 scroll-m-20 text-4xl font-extrabold first:mt-0 md:text-5xl lg:text-6xl"
+      >
         {article.data.title}
       </h1>
 
@@ -73,15 +78,19 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
       </p>
 
       <!-- metadata -->
-      <div class="flex gap-2 font-mono text-sm">
+      <div class="flex flex-col-reverse gap-2 font-mono text-sm md:flex-row">
         <p class="truncate">
           By <a
             class="text-violet-600 underline-offset-4 hover:underline dark:text-violet-500"
             href={author.data.link}>{author.data.name}</a
           >
         </p>
-        <span>&bull;</span>
-        <time class="truncate text-muted-foreground">{pubDate}</time>
+        <span class="hidden md:flex">&bull;</span>
+        <time class="text-muted-foreground">
+          {pubDate}
+          |
+          <span class="italic">{minutesRead}</span>
+        </time>
       </div>
     </header>
 

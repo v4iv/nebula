@@ -62,6 +62,9 @@ importers:
       lucide-react:
         specifier: ^0.471.1
         version: 0.471.1(react@19.0.0)
+      mdast-util-to-string:
+        specifier: ^4.0.0
+        version: 4.0.0
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -71,6 +74,9 @@ importers:
       react-hook-form:
         specifier: ^7.54.2
         version: 7.54.2(react@19.0.0)
+      reading-time:
+        specifier: ^1.5.0
+        version: 1.5.0
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -2782,6 +2788,9 @@ packages:
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
+
+  reading-time@1.5.0:
+    resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
 
   reflect.getprototypeof@1.0.10:
     resolution: {integrity: sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==}
@@ -6368,6 +6377,8 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
+
+  reading-time@1.5.0: {}
 
   reflect.getprototypeof@1.0.10:
     dependencies:
