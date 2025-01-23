@@ -6,6 +6,7 @@ import featured from "@/assets/featured.svg"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import { Separator } from "@/components/ui/separator"
+import ButtonLink from "@/components/ButtonLink.astro"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -48,7 +49,9 @@ const latestArticles = articles.slice(1, 5)
           />
           <!-- hero metadata -->
           <div class="mb-2 flex items-center font-mono text-sm">
-            <div class="flex items-center gap-1 border-b-4 border-violet-500">
+            <div
+              class="flex items-center gap-1 border-b-4 border-teal-300 md:border-violet-500"
+            >
               <time class="uppercase">
                 {featuredArticlePubDate}
               </time>
@@ -60,7 +63,7 @@ const latestArticles = articles.slice(1, 5)
           </div>
 
           <!-- hero image -->
-          <a href={`/article/${featuredArticle.id}`}>
+          <a href={`/articles/${featuredArticle.id}`}>
             <Picture
               src={featuredArticle.data.cover}
               alt={featuredArticle.data.title}
@@ -87,7 +90,7 @@ const latestArticles = articles.slice(1, 5)
             class="text-glitch scroll-m-20 break-words text-4xl font-bold first:m-0 md:text-6xl"
           >
             <a
-              href={`/article/${featuredArticle.id}`}
+              href={`/articles/${featuredArticle.id}`}
               class="origin-top-right decoration-violet-500 decoration-8 group-hover:underline"
             >
               {featuredArticle.data.title}
@@ -95,7 +98,7 @@ const latestArticles = articles.slice(1, 5)
           </h2>
 
           <p class="my-1 font-serif text-lg md:my-2 md:text-xl">
-            <a href={`/article/${featuredArticle.id}`}>
+            <a href={`/articles/${featuredArticle.id}`}>
               {featuredArticle.data.description}
             </a>
           </p>
@@ -118,8 +121,8 @@ const latestArticles = articles.slice(1, 5)
       <Separator />
 
       <!-- latest articles -->
-      <section class="mx-auto my-14 max-w-screen-md space-y-5">
-        <div class="mb-5 flex">
+      <section class="mx-auto my-8 max-w-screen-md space-y-5">
+        <div class="mb-3 flex">
           <div class="border-b-4 border-violet-500">
             <p class="font-mono font-bold uppercase tracking-wider">
               {t("home.latest")}
@@ -142,12 +145,12 @@ const latestArticles = articles.slice(1, 5)
             } = await render(article)
 
             return (
-              <article class="border-b px-3 py-5 last:border-none md:px-0">
+              <article class="border-b py-5 last:border-none md:px-0">
                 <div class="group flex flex-col md:flex-row">
                   <div class="order-2 mb-2 pr-0 md:order-1 md:w-3/5 md:pr-3">
                     <a
                       class="block px-0 group-hover:text-muted-foreground"
-                      href={`/article/${article.id}`}
+                      href={`/articles/${article.id}`}
                     >
                       <h2 class="scroll-m-20 text-3xl font-bold first:mt-0">
                         {article.data.title}
@@ -161,7 +164,7 @@ const latestArticles = articles.slice(1, 5)
 
                   <div class="order-1 mb-4 w-full pl-0 md:order-last md:mb-0 md:ml-auto md:w-2/5 md:pl-3">
                     <div class={`overflow-hidden rounded-none font-mono`}>
-                      <a class="block px-0" href={`/article/${article.id}`}>
+                      <a class="block px-0" href={`/articles/${article.id}`}>
                         <Picture
                           class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                           src={article.data.cover}
@@ -192,6 +195,18 @@ const latestArticles = articles.slice(1, 5)
           })
         }
       </section>
+
+      <!-- all articles -->
+      <div class="mx-auto my-3 flex max-w-screen-md justify-end">
+        <ButtonLink
+          href="/articles/1"
+          size="lg"
+          variant="outline"
+          class="rounded-none font-mono uppercase"
+        >
+          {t("home.all-articles")} &rarr;
+        </ButtonLink>
+      </div>
     </div>
   </main>
 </BaseLayout>
