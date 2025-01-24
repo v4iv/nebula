@@ -8,7 +8,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro"
 import {
   Pagination,
   PaginationContent,
+  PaginationEllipsis,
   PaginationItem,
+  PaginationLink,
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination"
@@ -27,13 +29,14 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 const {
   page: {
     data,
-    url: { prev, next },
+    currentPage,
+    url: { prev, next, current, first, last },
   },
 } = Astro.props
 ---
 
 <BaseLayout>
-  <main class="mx-auto min-h-screen w-full max-w-screen-lg">
+  <main class="mx-auto min-h-screen w-full max-w-screen-lg px-3">
     <section class="mx-auto my-8 max-w-screen-md space-y-5">
       <div class="mb-3 flex">
         <div class="border-b-4 border-violet-500">
@@ -116,19 +119,43 @@ const {
             {
               prev && (
                 <PaginationPrevious
-                  size="lg"
-                  className="rounded-none font-mono text-lg uppercase"
                   href={prev}
+                  className="rounded-none font-mono text-lg uppercase"
                 />
               )
             }
           </PaginationItem>
 
+          {
+            !last && (
+              <PaginationItem>
+                <PaginationEllipsis />
+              </PaginationItem>
+            )
+          }
+
+          <PaginationItem>
+            <PaginationLink
+              isActive
+              href={current}
+              className="rounded-none font-mono text-lg"
+            >
+              {currentPage}
+            </PaginationLink>
+          </PaginationItem>
+
+          {
+            next && (
+              <PaginationItem>
+                <PaginationEllipsis />
+              </PaginationItem>
+            )
+          }
+
           <PaginationItem>
             {
               next && (
                 <PaginationNext
-                  size="lg"
                   className="rounded-none font-mono text-lg uppercase"
                   href={next}
                 />

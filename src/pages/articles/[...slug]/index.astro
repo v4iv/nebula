@@ -8,8 +8,10 @@ import {
 import { Picture } from "astro:assets"
 import slugify from "slugify"
 
+import { getLangFromUrl } from "@/i18n/utils"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Prose from "@/components/Prose.astro"
+import { Share, ShareMobile } from "@/components/share"
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles")
@@ -22,6 +24,8 @@ export async function getStaticPaths() {
 }
 
 type Props = CollectionEntry<"articles">
+
+const lang = getLangFromUrl(Astro.url)
 
 const article = Astro.props
 
@@ -92,6 +96,21 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
           <span class="italic">{minutesRead}</span>
         </time>
       </div>
+
+      <ShareMobile
+        lang={lang}
+        title={article.data.title}
+        link={`${Astro.site}articles/${article.id}`}
+        className="pt-3"
+        client:load
+      />
+      <Share
+        lang={lang}
+        title={article.data.title}
+        link={`${Astro.site}articles/${article.id}`}
+        className="hidden pt-3 md:flex"
+        client:load
+      />
     </header>
 
     <div class="mx-auto w-full max-w-screen-xl px-3">
@@ -108,6 +127,21 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
       <Prose>
         <Content />
       </Prose>
+
+      <ShareMobile
+        lang={lang}
+        title={article.data.title}
+        link={`${Astro.site}articles/${article.id}`}
+        className="justify-center pt-5"
+        client:load
+      />
+      <Share
+        lang={lang}
+        title={article.data.title}
+        link={`${Astro.site}articles/${article.id}`}
+        className="hidden justify-center pt-5 md:flex"
+        client:load
+      />
     </div>
   </main>
 </BaseLayout>
