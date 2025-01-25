@@ -3,11 +3,11 @@ media:
   output: /src/assets/media
 content:
   - name: articles
-    lable: Articles
+    label: Articles
     type: collection
     path: src/content/articles
     filename: "{primary}.md"
-    icon: scroll-text
+    icon: "scroll-text"
     view:
       fields: [title, date]
     fields:
@@ -19,11 +19,11 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: body, label: Body, type: rich-text }
   - name: authors
-    lable: Authors
+    label: Authors
     type: collection
     path: src/content/authors
     filename: "{primary}.json"
-    icon: user-pen
+    icon: "user-pen"
     view:
       fields: [name, date]
     fields:
