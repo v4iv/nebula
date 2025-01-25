@@ -1,5 +1,6 @@
 import React from "react"
 import { Search } from "lucide-react"
+import type { CollectionEntry } from "astro:content"
 
 import { useTranslations } from "@/i18n/utils"
 import { defaultLang, type languages } from "@/i18n/ui"
@@ -22,10 +23,12 @@ function SearchBox({
   lang = defaultLang,
   open,
   setOpen,
+  articles,
 }: {
   lang?: keyof typeof languages
   open: boolean
   setOpen: React.Dispatch<React.SetStateAction<boolean>>
+  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
 
@@ -35,13 +38,38 @@ function SearchBox({
         <DialogTitle></DialogTitle>
         <DialogDescription></DialogDescription>
       </DialogHeader>
+
       <CommandInput placeholder={t("search.placeholder")} />
+
       <CommandList aria-describedby="">
         <CommandEmpty>{t("search.no-results")}</CommandEmpty>
+
         <CommandGroup heading={t("search.suggestions")}>
-          <CommandItem>{t("navbar.tags")}</CommandItem>
-          <CommandItem>{t("navbar.about")}</CommandItem>
-          <CommandItem>{t("navbar.contact")}</CommandItem>
+          <CommandItem>
+            <a href="/tags" className="text-lg">
+              {t("navbar.tags")}
+            </a>
+          </CommandItem>
+          <CommandItem>
+            <a href="/about" className="text-lg">
+              {t("navbar.about")}
+            </a>
+          </CommandItem>
+          <CommandItem>
+            <a href="/contact" className="text-lg">
+              {t("navbar.contact")}
+            </a>
+          </CommandItem>
+        </CommandGroup>
+
+        <CommandGroup heading={t("search.articles")}>
+          {articles.map((article, idx) => (
+            <CommandItem key={`${article.id}-${idx}`}>
+              <a href={`/articles/${article.id}`} className="text-lg">
+                {article.data.title}
+              </a>
+            </CommandItem>
+          ))}
         </CommandGroup>
       </CommandList>
     </CommandDialog>
@@ -50,8 +78,10 @@ function SearchBox({
 
 export function SearchButton({
   lang = defaultLang,
+  articles,
 }: {
   lang?: keyof typeof languages
+  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
   const [open, setOpen] = React.useState(false)
@@ -77,15 +107,17 @@ export function SearchButton({
         <Search className="ml-2 size-5" />
       </span>
 
-      <SearchBox open={open} setOpen={setOpen} />
+      <SearchBox open={open} setOpen={setOpen} articles={articles} />
     </>
   )
 }
 
 export function SearchField({
   lang = defaultLang,
+  articles,
 }: {
   lang?: keyof typeof languages
+  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
   const [open, setOpen] = React.useState(false)
@@ -103,7 +135,7 @@ export function SearchField({
         {t("search.placeholder")}
       </Button>
 
-      <SearchBox open={open} setOpen={setOpen} />
+      <SearchBox open={open} setOpen={setOpen} articles={articles} />
     </div>
   )
 }

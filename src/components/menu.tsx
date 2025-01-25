@@ -1,5 +1,6 @@
 import React from "react"
 import { AtSign, Hash, House, MessageCircle, Plus, Rss, X } from "lucide-react"
+import type { CollectionEntry } from "astro:content"
 
 import tclb from "@/assets/logo.svg"
 import { useTranslations } from "@/i18n/utils"
@@ -21,6 +22,7 @@ export function MenuButton({
   lang = defaultLang,
   className = "",
   variant,
+  articles,
 }: {
   lang?: keyof typeof languages
   className?: string
@@ -33,6 +35,7 @@ export function MenuButton({
     | "ghost"
     | null
     | undefined
+  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
 
@@ -56,7 +59,7 @@ export function MenuButton({
 
         <SheetHeader>
           <SheetTitle className="flex items-center space-x-2">
-            <SearchField lang={lang} />
+            <SearchField articles={articles} lang={lang} />
 
             <SheetClose>
               <X className="size-10 text-teal-300" />
