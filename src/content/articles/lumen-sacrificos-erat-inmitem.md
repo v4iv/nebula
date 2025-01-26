@@ -2,7 +2,7 @@
 title: Lumen sacrificos erat inmitem aliquid obscenae ritus
 description: Hora et venenis et feroxque nobis spatiosum
 slug: lumen-sacrificos-erat-inmitem
-pubDate: 2024-12-16T12:30:00.000Z
+pubDate: 2024-12-16
 author: vaibhav-sharma
 cover: /src/assets/media/xChy58V.png
 tags:

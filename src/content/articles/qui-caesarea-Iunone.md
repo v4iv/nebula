@@ -2,7 +2,7 @@
 title: Qui Caesarea Iunone insequitur volucres adfata forsitan
 description: Lorem markdownum reparabile efflant data, ibi per tecta, quam magno, moriemur non cristata!
 slug: src/content/articles/qui-caesarea-Iunone
-pubDate: 2025-01-01T12:30:00.000Z
+pubDate: 2025-01-01
 author: vaibhav-sharma
 cover: /src/assets/media/F3PkBNT.png
 tags:
