@@ -11,7 +11,6 @@ tags:
   - javascript
   - authentication
   - react js
-  - ""
 ---
 How to write an Authenticated Route component which will redirect to Sign In Page if a user isn't authenticated and once authentication is complete, it'll redirect them back to the same page, this is a problem most new React developers face. Today we learn to do just that.
 
