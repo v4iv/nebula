@@ -32,7 +32,7 @@ collections:
           required: true,
           collection: "authors",
           search_fields: ["name"],
-          value_field: "name",
+          value_field: "{{slug}}",
           display_fields: ["name", "link"]
         }
       - { label: "Cover", name: "cover", widget: "image", required: true }
@@ -43,8 +43,9 @@ collections:
     label_singular: "Author"
     folder: "src/content/authors"
     create: true
-    slug: "{{fields.name}}"
+    slug: "{{fields.name}}.{{extension}}"
     extenstion: "json"
+    format: "json"
     fields:
       - { label: "Name", name: "name", widget: string, required: true }
       - { label: "Link", name: "link", widget: string, required: true }
