@@ -7,6 +7,7 @@ const articles = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
+      slug: z.string(),
       pubDate: z.coerce.date(),
       author: reference("authors"),
       cover: image(),
