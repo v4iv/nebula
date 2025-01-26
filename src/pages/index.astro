@@ -167,7 +167,7 @@ const latestArticles = articles.slice(1, 5)
                   <div class="order-2 mb-2 pr-0 md:order-1 md:w-3/5 md:pr-3">
                     <a
                       class="block px-0 group-hover:text-muted-foreground"
-                      href={`/articles/${article.slug}`}
+                      href={`/articles/${article.data.slug}`}
                     >
                       <h2 class="scroll-m-20 text-3xl font-bold first:mt-0">
                         {article.data.title}
@@ -181,7 +181,7 @@ const latestArticles = articles.slice(1, 5)
 
                   <div class="order-1 mb-4 w-full pl-0 md:order-last md:mb-0 md:ml-auto md:w-2/5 md:pl-3">
                     <div class={`overflow-hidden rounded-none font-mono`}>
-                      <a class="block px-0" href={`/articles/${article.slug}`}>
+                      <a class="block px-0" href={`/articles/${article.data.slug}`}>
                         <Picture
                           class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                           src={article.data.cover}

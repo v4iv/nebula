@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   const articles = await getCollection("articles")
   return articles.map((article) => {
     return {
-      params: { slug: article.slug },
+      params: { slug: article.data.slug },
       props: article,
     }
   })
@@ -100,14 +100,14 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
       <ShareMobile
         lang={lang}
         title={article.data.title}
-        link={`${Astro.site}articles/${article.slug}`}
+        link={`${Astro.site}articles/${article.data.slug}`}
         className="pt-3"
         client:load
       />
       <Share
         lang={lang}
         title={article.data.title}
-        link={`${Astro.site}articles/${article.slug}`}
+        link={`${Astro.site}articles/${article.data.slug}`}
         className="hidden pt-3 md:flex"
         client:load
       />
@@ -131,14 +131,14 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
       <ShareMobile
         lang={lang}
         title={article.data.title}
-        link={`${Astro.site}articles/${article.slug}`}
+        link={`${Astro.site}articles/${article.data.slug}`}
         className="justify-center pt-5"
         client:load
       />
       <Share
         lang={lang}
         title={article.data.title}
-        link={`${Astro.site}articles/${article.slug}`}
+        link={`${Astro.site}articles/${article.data.slug}`}
         className="hidden justify-center pt-5 md:flex"
         client:load
       />

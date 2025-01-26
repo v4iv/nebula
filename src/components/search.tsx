@@ -64,8 +64,8 @@ function SearchBox({
 
         <CommandGroup heading={t("search.articles")}>
           {articles.map((article, idx) => (
-            <CommandItem key={`${article.slug}-${idx}`}>
-              <a href={`/articles/${article.slug}`} className="text-lg">
+            <CommandItem key={`${article.data.slug}-${idx}`}>
+              <a href={`/articles/${article.data.slug}`} className="text-lg">
                 {article.data.title}
               </a>
             </CommandItem>
