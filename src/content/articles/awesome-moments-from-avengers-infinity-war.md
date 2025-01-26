@@ -17,7 +17,7 @@ The classic line from The Avengers! After tasting what Stark meant when he said 
 
 ## Space Squidward
 
-![Space Squidward](/img/squidward.jpg)
+![Space Squidward](src/assets/media/squidward.jpg)
 
 When Stark called Ebony Maw Squidward from Spongebob, it was a tiny one-liner but I just couldn't stop myself from laughing like a maniac. I'm sure I'm not the only, right?! right?! right?!
 
@@ -27,25 +27,25 @@ This sent the entire hall, in a fit of laughter.
 
 ## \`\`The only way to smuggle it was up my ....\`\`
 
-![Ass Eye](/img/eye.jpg)
+![Ass Eye](src/assets/media/eye.jpg)
 
 Oh, Rocket and his obsession with prosthesis! At least Thor got his missing eye thanks to the weird rabbit.
 
 ## Groot makes the handle of Stormbreaker with his Arm
 
-![Stormbreaker](/img/stormbreaker.jpg.png)
+![Stormbreaker](src/assets/media/stormbreaker.jpg.png)
 
 As if Thor getting a new Hammer/Axe wasn't exciting enough!
 
 ## Thanos' obsession with bubbles
 
-![thanos bubbles](/img/bubbles.jpg)
+![thanos bubbles](src/assets/media/bubbles.jpg)
 
 Seems to show a softer side to the Despot. Maybe... IDK
 
 ## Red Skull's Dementor Makeover
 
-![red_skull_dementor](/img/dementor.jpeg)
+![red_skull_dementor](src/assets/media/dementor.jpeg)
 
 This must be going through every Harry Potter fan, Red Skull levitating in that tattered robe was looking very much like a Dementor.
 
@@ -55,7 +55,7 @@ This was heartbreaking in a twisted kind of way. But certainly a powerful scene.
 
 ## Where's Who's and Why's of Gamora
 
-![Gamora](/img/gamora.jpg)
+![Gamora](src/assets/media/gamora.jpg)
 
 Guardians of the Galaxy meet Earth's Mightiest...
 
@@ -81,12 +81,12 @@ The dreadful SNAP, killing half the universe, including some of our most beloved
 
 ## Peter's Death
 
-![Peter's Death](/img/peters_death.jpg)
+![Peter's Death](src/assets/media/peters_death.jpg)
 
 This one got to me, and I'm sure most of the viewers. It was just too painful to hear him desperately hug Tony. "I'm sorry Mr. Stark..."
 
 ## Mother F
 
-![Paging Captain Marvel](/img/captainmarvel.jpg)
+![Paging Captain Marvel](src/assets/media/captainmarvel.jpg)
 
 This end credit was just appropriate..., Also Captain Marvel!
