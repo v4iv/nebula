@@ -16,6 +16,9 @@ if (!images[src])
   src={images[src]()}
   alt={alt}
   loading="eager"
-  formats={["avif", "webp"]}
+  formats={["avif"]}
+  fallbackFormat="jpeg"
+  widths={[240, 720, 1200]}
+  sizes={`(max-width: 360px) 240px, (max-width: 720px) 720px, 1200px`}
   {...attrs}
 />

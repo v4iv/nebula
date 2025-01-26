@@ -85,7 +85,10 @@ const {
                         class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                         src={article.data.cover}
                         alt={article.data.title}
-                        formats={["avif", "webp"]}
+                        formats={["avif"]}
+                        fallbackFormat="jpeg"
+                        widths={[240, 540, 720]}
+                        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, 720px`}
                       />
                     </a>
                   </div>
