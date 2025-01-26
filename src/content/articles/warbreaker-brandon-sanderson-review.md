@@ -1,5 +1,5 @@
 ---
-title: Warbreaker by Brandon Sanderson - Another Cosmere Gem
+title: Warbreaker by Brandon Sanderson — Another Cosmere Gem
 description: A review of Warbreaker by Brandon Sanderson, a tale of twists,
   tears, and tantalizing characters. One of the best Cosmere Novellas.
 pubDate: 2024-03-24T12:30:00.000Z
@@ -9,7 +9,7 @@ cover: src/assets/media/warbreaker-brandon-sanderson-bill-williams.jpg
 tags:
   - books
 ---
-**Mistborn [The Final Empire](https://theleakycauldronblog.com/blog/mistborn-the-final-empire-review/)** was my introduction to *Brandon Sanderson*'s work. And, while it was great, it was a YA Novel at its core, despite having very mature characterizations. Which meant it felt like I would have appreciated it better when I was younger. So, when I started **[The Well of Ascension](https://theleakycauldronblog.com/blog/mistborn-the-well-of-ascension-review)** I didn't expect it to grow so fast into something more than a mere YA Novel, the *Sanderlanche* at the end was mind blowing. And then **[The Hero of Ages](https://theleakycauldronblog.com/blog/mistborn-the-hero-of-ages-review)** quickly and unsurprisingly became one of the best fantasy books I had ever read! But I had no idea how much I would like Warbreaker when I was getting into it, since I had not heard much, if at all, about this book. The book was not token YA at all, rather, it got into mature in themes like sex, metal health, poverty and torture (though none of it is explicit in nature). I believe if the humor lands for you, you'll love this book.
+**Mistborn [The Final Empire](https://theleakycauldronblog.com/articles/mistborn-the-final-empire-review/)** was my introduction to *Brandon Sanderson*'s work. And, while it was great, it was a YA Novel at its core, despite having very mature characterizations. Which meant it felt like I would have appreciated it better when I was younger. So, when I started **[The Well of Ascension](https://theleakycauldronblog.com/articles/mistborn-the-well-of-ascension-review)** I didn't expect it to grow so fast into something more than a mere YA Novel, the *Sanderlanche* at the end was mind blowing. And then **[The Hero of Ages](https://theleakycauldronblog.com/articles/mistborn-the-hero-of-ages-review)** quickly and unsurprisingly became one of the best fantasy books I had ever read! But I had no idea how much I would like Warbreaker when I was getting into it, since I had not heard much, if at all, about this book. The book was not token YA at all, rather, it got into mature in themes like sex, metal health, poverty and torture (though none of it is explicit in nature). I believe if the humor lands for you, you'll love this book.
 
 **Warning: May Contain Mild Spoilers!**
 
