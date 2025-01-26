@@ -44,7 +44,7 @@ export async function GET(context: AstroGlobal) {
           description: article.data.description,
           pubDate: new Date(article.data.pubDate),
           author: author.data.name,
-          link: `/articles/${article.data.slug}`,
+          link: `/articles/${article.id}`,
           content: html,
         }
       }),

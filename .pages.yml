@@ -7,15 +7,14 @@ content:
     type: collection
     path: src/content/articles
     filename: "{primary}.md"
-    icon: "scroll-text"
-    primary: slug
+    primary: title
     view:
       fields: [title, pubDate]
       sort: [ pubDate, title ]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
-      - { name: slug, label: Slug, type: string, required: true }
+      - { name: slug, label: Slug, type: string, hidden: true }
       - { name: pubDate, label: Date, type: date, required: true }
       - { name: author, label: Author, type: string, required: true }
       - { name: cover, label: Cover, type: image, required: true }
@@ -26,7 +25,6 @@ content:
     type: collection
     path: src/content/authors
     filename: "{primary}.json"
-    icon: "user-pen"
     primary: name
     view:
       fields: [name]
@@ -37,7 +35,6 @@ content:
     label: About Page
     type: file
     path: src/pages/about/index.md
-    icon: message-square-quote
     fields:
       - {
           name: layout,
