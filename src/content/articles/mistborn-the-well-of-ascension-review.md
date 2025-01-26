@@ -37,6 +37,6 @@ In hindsight, "The Well of Ascension" was a testament to Brandon Sanderson's abi
 
 ## Mistborn Era 1 Reviews
 
-**[The Final Emire Review](https://theleakycauldronblog.com/blog/mistborn-the-final-empire-review)**
+**[The Final Emire Review](/articles/mistborn-the-final-empire-review)**
 
-**[The Hero of Ages Review](https://theleakycauldronblog.com/blog/mistborn-the-hero-of-ages-review)**
+**[The Hero of Ages Review](/articles/mistborn-the-hero-of-ages-review)**

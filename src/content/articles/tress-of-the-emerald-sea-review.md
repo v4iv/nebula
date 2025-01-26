@@ -11,7 +11,7 @@ cover: src/assets/media/sippingsaltytea.jpg
 tags:
   - books
 ---
-So, diving into *“Tress of the Emerald Sea”* was like stepping into a different Sanderson universe, right? It’s got this light, fairy-tale vibe that’s not what you’d expect after books like [Mistborn](https://theleakycauldronblog.com/blog/mistborn-the-final-empire-review/) or [Warbreaker](https://theleakycauldronblog.com/blog/warbreaker-brandon-sanderson-review/). And Tress, she’s not your typical hero with crazy powers. She’s just super practical and thoughtful, which totally makes sense since she’s used to chilling on her own while washing windows.
+So, diving into *“Tress of the Emerald Sea”* was like stepping into a different Sanderson universe, right? It’s got this light, fairy-tale vibe that’s not what you’d expect after books like [Mistborn](/articles/mistborn-the-final-empire-review/) or [Warbreaker](/articles/warbreaker-brandon-sanderson-review/). And Tress, she’s not your typical hero with crazy powers. She’s just super practical and thoughtful, which totally makes sense since she’s used to chilling on her own while washing windows.
 
 **Warning: May Contain Mild Spoilers**
 

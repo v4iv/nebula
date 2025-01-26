@@ -35,6 +35,6 @@ In the end, "Hero of Ages" delivered a worthy conclusion to the Mistborn trilogy
 
 ## Mistborn Era 1 Reviews
 
-**[The Final Empire Review](https://theleakycauldronblog.com/blog/mistborn-the-final-empire-review/)**
+**[The Final Empire Review](/articles/mistborn-the-final-empire-review/)**
 
-**[The Well of Ascension Review](https://theleakycauldronblog.com/blog/mistborn-the-well-of-ascension-review/)**
+**[The Well of Ascension Review](/articles/mistborn-the-well-of-ascension-review/)**
