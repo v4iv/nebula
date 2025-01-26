@@ -11,6 +11,7 @@ interface Props {
   title?: string
   description?: string
   image?: string
+  author?: string
 }
 
 const lang = getLangFromUrl(Astro.url)
@@ -20,13 +21,19 @@ const {
   title = t("meta.title"),
   description = t("meta.description"),
   image = "/banner.jpg",
+  author = "Vaibhav Sharma",
 } = Astro.props
 ---
 
 <!doctype html>
 <html lang={lang} class="scroll-smooth">
   <head>
-    <BaseHead title={title} description={description} image={image} />
+    <BaseHead
+      title={title}
+      description={description}
+      author={author}
+      image={image}
+    />
 
     <script is:inline>
       const darkModePreference = window.matchMedia(

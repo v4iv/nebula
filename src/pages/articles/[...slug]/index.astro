@@ -5,7 +5,7 @@ import {
   getEntry,
   render,
 } from "astro:content"
-import { Picture } from "astro:assets"
+import { getImage, Picture } from "astro:assets"
 import slugify from "slugify"
 
 import { getLangFromUrl } from "@/i18n/utils"
@@ -41,12 +41,15 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
   day: "numeric",
   year: "numeric",
 })
+
+const bannerImage = await getImage({src: article.data.cover, format: 'avif'})
 ---
 
 <BaseLayout
   title={article.data.title}
   description={article.data.description}
-  image={article.data.cover.src}
+  image={bannerImage.src}
+  author={author.data.name}
 >
   <main class="min-h-screen">
     <header class="mx-auto mb-5 w-full max-w-screen-lg px-3">
