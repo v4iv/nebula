@@ -14,16 +14,16 @@ tags:
   - react js
   - SEO
 ---
-**NOTE:** Updated for **_gatsby-starter-business v2.1_**
+**NOTE:** Updated for ***gatsby-starter-business v2.1***
 
 Gatsby JS brought something that everyone was waiting for, a React JS based static site generator, and that too a powerful one. True to their boast that it's really hard to make a sloppy website with Gatsby, making it amazing for marketing websites.
 
 When I was writing a website for my company, I found my self wanting a Gatsby starter with the following requirements:
 
-* It should be powered by _Netlify_ CMS.
+* It should be powered by *Netlify* CMS.
 * It should be SEO friendly.
 * It should at least have a home page and blog page.
-* It should allow proper styling using some CSS framework like _Bootstrap_ or _Bulma_.
+* It should allow proper styling using some CSS framework like *Bootstrap* or *Bulma*.
 
 While all these features are available in various starters, none of them was a complete package. So, I decided I'll make one myself:
 
@@ -33,7 +33,7 @@ While all these features are available in various starters, none of them was a c
 
 Assuming you already have Gatsby CLI installed, to start a new Gatsby JS Project using Gatsby-Starter-Business, open your terminal and run this:
 
-```bash
+```shell
 gatsby new <your_project_name> https://github.com/v4iv/gatsby-starter-business
 ```
 
