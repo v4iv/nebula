@@ -3,7 +3,7 @@ title: Making a marketing website using Gatsby Starter Business
 description: Make an SEO friendly website, leveraging Gatsby Starter Business,
   perfect for your marketing needs like Sitemap, Schemas, OpenGraph, Meta Tags,
   GTM etc
-pubDate: 2014-10-04T12:30:00.000Z
+pubDate: 2014-04-10T12:30:00.000Z
 slug: making-a-marketing-website-using-gatsby-starter-business
 author: vaibhav-sharma
 cover: src/assets/media/gatsby_marketing_website.jpg
