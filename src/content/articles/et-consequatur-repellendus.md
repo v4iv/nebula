@@ -1,6 +1,7 @@
 ---
 title: Et consequatur repellendus aut soluta exercitationem
 description: Et magnam quaeratAut placeat vel fugiat praesentium rem provident velit. Quo consectetur quaerat quo quia eaqueaut voluptas!
+slug: et-consequatur-repellendus
 pubDate: 2025-01-15T12:30:00.000Z
 author: vaibhav-sharma
 cover: /src/assets/media/bLxcjh3.png

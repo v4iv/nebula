@@ -1,6 +1,7 @@
 ---
 title: Hyacinthe vos inpia rupit quoque alimenta animae
 description: Margine manus rabies subitarum iamdudum temporis misit
+slug: hyacinthe-vos-inpia
 pubDate: 2024-12-26T12:30:00.000Z
 author: vaibhav-sharma
 cover: /src/assets/media/i8viCPK.png

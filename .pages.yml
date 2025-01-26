@@ -8,24 +8,28 @@ content:
     path: src/content/articles
     filename: "{primary}.md"
     icon: "scroll-text"
+    primary: slug
     view:
-      fields: [title, date]
+      fields: [title, pubDate]
+      sort: [ pubDate, title ]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - { name: description, label: Description, type: string }
-      - { name: pubDate, label: Date, type: date }
-      - { name: author, label: Author, type: string }
-      - { name: cover, label: Cover, type: image }
+      - { name: description, label: Description, type: string, required: true }
+      - { name: slug, label: Slug, type: string, required: true }
+      - { name: pubDate, label: Date, type: date, required: true }
+      - { name: author, label: Author, type: string, required: true }
+      - { name: cover, label: Cover, type: image, required: true }
       - { name: tags, label: Tags, type: string, list: true }
-      - { name: body, label: Body, type: rich-text }
+      - { name: body, label: Body, type: rich-text, required: true }
   - name: authors
     label: Authors
     type: collection
     path: src/content/authors
     filename: "{primary}.json"
     icon: "user-pen"
+    primary: name
     view:
-      fields: [name, date]
+      fields: [name]
     fields:
       - { name: name, label: Name, type: string, required: true }
       - { name: link, label: Link, type: string, required: true }
@@ -41,9 +45,9 @@ content:
           hidden: true,
           default: "../../layouts/AboutLayout.astro",
         }
-      - { name: title, label: Title, type: string }
-      - { name: subtitle, label: Subtitle, type: string }
-      - { name: description, label: Description, type: string }
-      - { name: author, label: Author, type: string }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: subtitle, label: Subtitle, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - { name: author, label: Author, type: string, required: true }
       - { name: cover, label: Cover, type: image, required: true }
       - { name: body, label: Body, type: rich-text }

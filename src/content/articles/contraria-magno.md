@@ -1,6 +1,7 @@
 ---
 title: Contraria magno
 description: Consumpserat clivo aufer liquidas adnuit ut tollens
+slug: contraria-magno
 pubDate: 2024-12-21T12:30:00.000Z
 author: vaibhav-sharma
 cover: /src/assets/media/qBoO5S9.png
