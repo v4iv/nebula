@@ -1,6 +1,6 @@
 ---
 import { getCollection, getEntry, render } from "astro:content"
-import { Picture } from "astro:assets"
+import { Image } from "astro:assets"
 
 import featured from "@/assets/featured.svg"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
@@ -42,7 +42,7 @@ const latestArticles = articles.slice(1, 5)
           class="relative block max-w-screen-sm md:pl-14 lg:max-w-screen-md xl:max-w-screen-lg"
         >
           <!-- featued -->
-          <Picture
+          <Image
             src={featured}
             alt={t("home.featured")}
             loading="eager"
@@ -73,11 +73,10 @@ const latestArticles = articles.slice(1, 5)
 
           <!-- hero image -->
           <a href={`/articles/${featuredArticle.id}`}>
-            <Picture
+            <Image
               src={featuredArticle.data.cover}
               alt={featuredArticle.data.title}
-              formats={["avif"]}
-              fallbackFormat="jpeg"
+              format="avif"
               widths={[240, 720, 1200]}
               sizes={`(max-width: 360px) 240px, (max-width: 720px) 720px, 1200px`}
               loading="eager"
@@ -185,12 +184,11 @@ const latestArticles = articles.slice(1, 5)
                   <div class="order-1 mb-4 w-full pl-0 md:order-last md:mb-0 md:ml-auto md:w-2/5 md:pl-3">
                     <div class={`overflow-hidden rounded-none font-mono`}>
                       <a class="block px-0" href={`/articles/${article.id}`}>
-                        <Picture
+                        <Image
                           class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                           src={article.data.cover}
                           alt={article.data.title}
-                          formats={["avif"]}
-                          fallbackFormat="jpeg"
+                          format="avif"
                           widths={[240, 540, 720]}
                           sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, 720px`}
                         />

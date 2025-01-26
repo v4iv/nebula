@@ -5,7 +5,7 @@ import {
   getEntry,
   render,
 } from "astro:content"
-import { getImage, Picture } from "astro:assets"
+import { getImage, Image } from "astro:assets"
 import slugify from "slugify"
 
 import { getLangFromUrl } from "@/i18n/utils"
@@ -121,11 +121,10 @@ const bannerImage = await getImage({
     </header>
 
     <div class="mx-auto w-full max-w-screen-xl px-3">
-      <Picture
+      <Image
         src={article.data.cover}
         alt={article.data.title}
-        formats={["avif"]}
-        fallbackFormat="jpeg"
+        format="avif"
         widths={[240, 720, 1200]}
         sizes={`(max-width: 360px) 240px, (max-width: 720px) 720px, 1200px`}
         loading="eager"
