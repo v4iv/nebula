@@ -42,7 +42,7 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
   year: "numeric",
 })
 
-const bannerImage = await getImage({src: article.data.cover, format: 'avif'})
+const bannerImage = await getImage({ src: article.data.cover, format: "avif" })
 ---
 
 <BaseLayout
@@ -122,7 +122,7 @@ const bannerImage = await getImage({src: article.data.cover, format: 'avif'})
         alt={article.data.title}
         formats={["avif", "webp"]}
         loading="eager"
-        class="bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
+        class="w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
       />
     </div>
 
