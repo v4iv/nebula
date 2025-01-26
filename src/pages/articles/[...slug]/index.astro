@@ -124,9 +124,6 @@ const bannerImage = await getImage({
       <Image
         src={article.data.cover}
         alt={article.data.title}
-        format="avif"
-        widths={[240, 720, 1200]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 720px, 1200px`}
         loading="eager"
         class="w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
       />

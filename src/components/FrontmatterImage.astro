@@ -12,12 +12,4 @@ if (!images[src])
   )
 ---
 
-<Image
-  src={images[src]()}
-  alt={alt}
-  loading="eager"
-  format="avif"
-  widths={[240, 720, 1200]}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 720px, 1200px`}
-  {...attrs}
-/>
+<Image src={images[src]()} alt={alt} loading="eager" format="avif" {...attrs} />
