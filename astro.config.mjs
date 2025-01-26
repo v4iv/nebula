@@ -28,7 +28,4 @@ export default defineConfig({
     responsiveImages: true,
     contentIntellisense: true,
   },
-  prefetch: {
-    defaultStrategy: "viewport",
-  },
 })
