@@ -19,7 +19,7 @@ const authors = defineCollection({
   loader: glob({ pattern: "**/[^_]*.json", base: "./src/content/authors" }),
   schema: z.object({
     name: z.string().trim(),
-    link: z.string().trim().url(),
+    link: z.string().trim(),
   }),
 })
 

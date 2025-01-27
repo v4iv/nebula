@@ -7,6 +7,7 @@ import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import ButtonLink from "@/components/ButtonLink.astro"
 import { Separator } from "@/components/ui/separator"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { ShareMobile, Share } from "@/components/share"
 
 const lang = getLangFromUrl(Astro.url)
@@ -72,17 +73,24 @@ const latestArticles = articles.slice(1, 5)
           </div>
 
           <!-- hero image -->
-          <a href={`/articles/${featuredArticle.id}`}>
-            <Image
-              src={featuredArticle.data.cover}
-              alt={featuredArticle.data.title}
-              format="avif"
-              loading="eager"
-              widths={[540, 1200, featuredArticle.data.cover.width]}
-              sizes={`(max-width: 360px) 540px, (max-width: 720px) 1200px, ${featuredArticle.data.cover.width}`}
-              class="aspect-video w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 drop-shadow-lg"
-            />
-          </a>
+          <div class="overflow-hidden">
+            <a href={`/articles/${featuredArticle.id}`}>
+              <AspectRatio
+                ratio={16 / 9}
+                className="bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
+              >
+                <Image
+                  src={featuredArticle.data.cover}
+                  alt={featuredArticle.data.title}
+                  format="avif"
+                  loading="eager"
+                  widths={[540, 1200, featuredArticle.data.cover.width]}
+                  sizes={`(max-width: 360px) 540px, (max-width: 720px) 1200px, ${featuredArticle.data.cover.width}`}
+                  class="w-full object-cover drop-shadow-lg transition-all duration-300 hover:scale-105"
+                />
+              </AspectRatio>
+            </a>
+          </div>
 
           <div
             class="pointer-events-none absolute bottom-0 top-auto size-full translate-y-0 bg-gradient-to-t from-white/10 to-transparent dark:from-black/10"
