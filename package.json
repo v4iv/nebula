@@ -36,6 +36,7 @@
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
     "decap-cms-app": "^3.5.0",
+    "fuse.js": "^7.0.0",
     "lucide-react": "^0.474.0",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
