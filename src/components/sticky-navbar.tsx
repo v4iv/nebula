@@ -1,5 +1,4 @@
 import React from "react"
-import type { CollectionEntry } from "astro:content"
 
 import { useTranslations } from "@/i18n/utils"
 import { defaultLang, type languages } from "@/i18n/ui"

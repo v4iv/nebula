@@ -9,7 +9,6 @@ import {
   Search,
   X,
 } from "lucide-react"
-import type { CollectionEntry } from "astro:content"
 
 import tclb from "@/assets/logo.svg"
 import { useTranslations } from "@/i18n/utils"
@@ -25,7 +24,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
-import { SearchField } from "@/components/search"
 
 export function MenuButton({
   lang = defaultLang,

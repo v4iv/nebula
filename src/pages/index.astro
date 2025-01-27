@@ -1,6 +1,6 @@
 ---
-import { getCollection, getEntry, render } from "astro:content"
 import { Image } from "astro:assets"
+import { getCollection, getEntry, render } from "astro:content"
 
 import featured from "@/assets/featured.svg"
 import { getLangFromUrl, useTranslations } from "@/i18n/utils"
@@ -78,6 +78,8 @@ const latestArticles = articles.slice(1, 5)
               alt={featuredArticle.data.title}
               format="avif"
               loading="eager"
+              widths={[540, 1200, featuredArticle.data.cover.width]}
+              sizes={`(max-width: 360px) 540px, (max-width: 720px) 1200px, ${featuredArticle.data.cover.width}`}
               class="w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 drop-shadow-lg"
             />
           </a>
@@ -183,12 +185,11 @@ const latestArticles = articles.slice(1, 5)
                     <div class={`overflow-hidden rounded-none font-mono`}>
                       <a class="block px-0" href={`/articles/${article.id}`}>
                         <Image
-                          class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                           src={article.data.cover}
                           alt={article.data.title}
                           format="avif"
-                          widths={[240, 540, 720]}
-                          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, 720px`}
+                          width={720}
+                          class="block aspect-video h-auto w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20 object-cover transition-all duration-300 group-hover:scale-105 md:aspect-[4/3]"
                         />
                       </a>
                     </div>
