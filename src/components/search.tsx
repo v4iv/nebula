@@ -23,12 +23,12 @@ function SearchBox({
   lang = defaultLang,
   open,
   setOpen,
-  articles,
+  articles = [],
 }: {
   lang?: keyof typeof languages
   open: boolean
   setOpen: React.Dispatch<React.SetStateAction<boolean>>
-  articles: CollectionEntry<"articles">[]
+  articles?: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
 
@@ -78,10 +78,8 @@ function SearchBox({
 
 export function SearchButton({
   lang = defaultLang,
-  articles,
 }: {
   lang?: keyof typeof languages
-  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
   const [open, setOpen] = React.useState(false)
@@ -107,17 +105,15 @@ export function SearchButton({
         <Search className="ml-2 size-5" />
       </span>
 
-      <SearchBox open={open} setOpen={setOpen} articles={articles} />
+      <SearchBox open={open} setOpen={setOpen} />
     </>
   )
 }
 
 export function SearchField({
   lang = defaultLang,
-  articles,
 }: {
   lang?: keyof typeof languages
-  articles: CollectionEntry<"articles">[]
 }) {
   const t = useTranslations(lang)
   const [open, setOpen] = React.useState(false)
@@ -135,7 +131,7 @@ export function SearchField({
         {t("search.placeholder")}
       </Button>
 
-      <SearchBox open={open} setOpen={setOpen} articles={articles} />
+      <SearchBox open={open} setOpen={setOpen} />
     </div>
   )
 }

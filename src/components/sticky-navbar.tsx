@@ -7,9 +7,7 @@ import { MenuButton } from "@/components/menu"
 
 export default function StickyNavBar({
   lang = defaultLang,
-  articles,
 }: {
-  articles: CollectionEntry<"articles">[]
   lang?: keyof typeof languages
 }) {
   const [show, setShow] = React.useState(false)
@@ -48,7 +46,6 @@ export default function StickyNavBar({
 
             <MenuButton
               variant="outline"
-              articles={articles}
               className="rounded-none border-none bg-transparent px-0 text-lg uppercase shadow-none transition-all duration-300 hover:bg-transparent hover:text-muted-foreground"
             />
           </div>
