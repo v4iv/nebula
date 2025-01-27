@@ -75,7 +75,7 @@ export function SearchBar({
   return (
     <TooltipProvider>
       <div className="mx-auto w-full max-w-screen-md px-3 py-5">
-        <div className="flex space-x-2">
+        <div className="flex items-center space-x-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <div className="animate-reveal-reverse relative flex grow">
@@ -90,7 +90,7 @@ export function SearchBar({
                   value={query}
                   placeholder={t("search.placeholder")}
                   onChange={handleQuery}
-                  className="rounded-none"
+                  className="h-14 rounded-none md:text-2xl"
                 />
               </div>
             </TooltipTrigger>
@@ -105,12 +105,11 @@ export function SearchBar({
               <TooltipTrigger asChild>
                 <Button
                   variant="outline"
-                  size="icon"
                   aria-label={t("navbar.close")}
                   onClick={() => history.back()}
-                  className="rounded-none"
+                  className="size-14 rounded-none"
                 >
-                  <X className="size-5 animate-in spin-in" />
+                  <X className="animate-in spin-in" />
                 </Button>
               </TooltipTrigger>
 
