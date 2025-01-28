@@ -4,7 +4,7 @@ title: About This Blog
 description: The screams of my victims fill every field.
 subtitle: The screams of my victims fill every field...
 author: Nebula
-cover: src/assets/media/xChy58V.png
+cover: /src/assets/media/xChy58V.png
 ---
 Lorem ipsum dolor sit amet. Ab animi sunt est dolores ipsum Ut sint est natus assumenda ut nisi doloremque. Et magnam quaeratAut placeat vel fugiat praesentium rem provident velit. Quo consectetur quaerat quo quia eaqueaut voluptas!
 
