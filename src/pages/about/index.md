@@ -4,12 +4,9 @@ title: About This Blog
 description: The screams of my victims fill every field.
 subtitle: The screams of my victims fill every field...
 author: Nebula
-cover: /src/assets/media/about.jpeg
+cover: src/assets/media/xChy58V.png
 ---
-
 Lorem ipsum dolor sit amet. Ab animi sunt est dolores ipsum Ut sint est natus assumenda ut nisi doloremque. Et magnam quaeratAut placeat vel fugiat praesentium rem provident velit. Quo consectetur quaerat quo quia eaqueaut voluptas!
-
-![Fangorn Forest](src/assets/media/bLxcjh3.png "Fangorn Forest")
 
 1. Sit quasi aspernatur aut tempore ratione!
 2. Ut ratione pariatur ea aliquam veniam et nostrum nesciunt cum iure sint.
