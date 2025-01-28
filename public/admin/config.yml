@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   repo: v4iv/nebula
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/94568621-0512-4841-b71e-fad2565c2944
+  gateway_url: https://gateway.decapbridge.com
 
 local_backend: true
 logo_url: /icon-512.png
