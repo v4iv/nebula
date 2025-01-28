@@ -1,28 +1,47 @@
 ---
 layout: ../../layouts/AboutLayout.astro
 title: About This Blog
-description: The Leaky Cauldron Blog is the personal blog of Vaibhav Sharma. Topics include coding, movies, music, books, dinosaurs or anything under the sun and beyond.
-subtitle: A brew of awesomeness with a pinch of magic...
-author: The Leaky Cauldron Blog
+description: The screams of my victims fill every field.
+subtitle: The screams of my victims fill every field...
+author: Nebula
 cover: /src/assets/media/about.jpeg
 ---
 
-**The Leaky Cauldron Blog** is the personal blog of **Vaibhav Sharma**.
+Lorem ipsum dolor sit amet. Ab animi sunt est dolores ipsum Ut sint est natus assumenda ut nisi doloremque. Et magnam quaeratAut placeat vel fugiat praesentium rem provident velit. Quo consectetur quaerat quo quia eaqueaut voluptas!
 
-This aims to be a place where I can publish anything and everything that interests me. Mostly about art, science, history, philosophy and programming.
+![Fangorn Forest](src/assets/media/bLxcjh3.png "Fangorn Forest")
 
-As you may have already guessed, this blog's name is inspired by the famous pub in *Harry Potter*. Just like that pub this blog will be a magical place where all random interesting things meet.
+1. Sit quasi aspernatur aut tempore ratione!
+2. Ut ratione pariatur ea aliquam veniam et nostrum nesciunt cum iure sint.
+3. Qui tempora quidem nam facilis dignissimos est porro voluptas et nulla consequatur.
+4. Aut magni omnis ea exercitationem autem.
+5. Rem galisum deleniti et voluptas ipsum est necessitatibus nostrum.
 
-This is a place where I want to share the challenges that I have faced. I will also show you how I overcame them so that others, who may be going through the same, won't have to go through them alone. It'll also be a place where i can rant about things that bother me.
+Quo porro omnis ut nihil expedita. Est perspiciatis saepe et necessitatibus autem est molestiae possimus. Cum rerum commodi? Est voluptatum perspiciatis qui culpa magnam et voluptas laudantium.
 
-I also want this blog to be a place where you can get to know about the lesser known mysteries and stories of the world. I would like to believe that I have established that I have varied interests, so I will also sporadically post movie, music and event reviews as well.
+```python
+def fib(n):    # write Fibonacci series up to n
+    """Print a Fibonacci series up to n."""
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
 
-Occasionally, this blog will feature [guest authors](/tags/guest-author) who will write about what they truly love. I hope to bring to light various unique world views to really live up to my blog's name.
+# Now call the function we just defined:
+fib(2000)
+```
 
-All in all, this blog has no fixed scope because *"True Beauty Lies In Chaos"*.
+## Est maiores Quis At accusantium nobis ut tenetur quibusdam.
 
-I sincerely hope this blog helps and inspires people to overcome their challenges, learn new things and make their lives better.
+Aut autem dolor est sequi veritatis Sit velit non suscipit omnis. Sit error maiores [Id dolore eum reprehenderit placeat et vitae modi](https://www.loremipzum.com/).
 
-As they say, life's a journey and I want us to support each other through each passing day.
+* Hic dicta laboriosam qui galisum excepturi sed consequatur error a temporibus nisi.
+* Et voluptatem quia 33 quia rerum ut necessitatibus inventore?
+* Et voluptatem minus aut itaque vitae qui obcaecati sunt vel inventore voluptas.
 
-` ~~~ Mischief Managed ~~~ `
+### Ut cumque esse cum doloremque itaque.
+
+Aut odit error Et ducimus hic ullam odit aut fugiat distinctio a velit velit ad incidunt perferendis? Ea nemo odit quo animi officia [Eos quasi rem sequi tempora et reiciendis deserunt id facere consequatur](https://www.loremipzum.com/). Quo perspiciatis veniam hic ipsa illo Non aliquid ut eius rerum aut consectetur ipsum sed illo neque aut repudiandae alias.
+
+> Est perferendis dicta sit commodi galisum ab velit neque non fugiat voluptatem id voluptates tempore eum iste beatae.

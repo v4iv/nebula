@@ -1,12 +1,14 @@
 # Nebula
 
+## 🚀 Getting Started
+
 ```sh
 npm create astro@latest -- --template v4iv/nebula
 ```
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
