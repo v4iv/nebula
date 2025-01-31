@@ -1,6 +1,6 @@
 ---
 title: 'Hello, World!'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+description: Mauris sit amet ornare ligula, blandit consequat risus. Duis malesuada pellentesque lectus, non feugiat turpis eleifend a.
 pubDate: 2025-01-01T12:30:00.000Z
 slug: hello-world
 author: nebula

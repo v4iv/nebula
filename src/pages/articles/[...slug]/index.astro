@@ -44,7 +44,7 @@ const pubDate = new Date(article.data.pubDate).toLocaleString("default", {
 
 const bannerImage = await getImage({
   src: article.data.cover,
-  format: "jpeg",
+  format: "jpg",
   width: 1200,
 })
 ---
@@ -56,7 +56,7 @@ const bannerImage = await getImage({
   author={author.data.name}
 >
   <main class="min-h-screen">
-    <header class="mx-auto mb-5 w-full max-w-screen-lg px-3">
+    <header class="mx-auto my-10 w-full max-w-screen-lg px-3">
       <!-- tags -->
       <ul class="mb-4 flex flex-wrap gap-3 text-sm">
         {
@@ -84,7 +84,7 @@ const bannerImage = await getImage({
       </h1>
 
       <!-- description -->
-      <p class="mb-2 text-2xl">
+      <p class="mb-2 font-serif text-2xl">
         {article.data.description}
       </p>
 
@@ -122,12 +122,13 @@ const bannerImage = await getImage({
 
     <div class="mx-auto w-full max-w-screen-xl px-3">
       <Image
+        priority
         src={article.data.cover}
         alt={article.data.title}
         format="avif"
         loading="eager"
-        widths={[540, 1200, article.data.cover.width]}
-        sizes={`(max-width: 360px) 540px, (max-width: 720px) 1200px, ${article.data.cover.width}`}
+        widths={[540, 720, 1250]}
+        sizes={`(max-width: 360px) 540px, (max-width: 720px) 720px, 1250px`}
         class="w-full bg-gradient-to-r from-yellow-400/20 via-rose-400/20 to-violet-500/20"
       />
     </div>
@@ -153,13 +154,15 @@ const bannerImage = await getImage({
       />
 
       <div class="mt-10">
+        <!-- Giscus -->
         <script
           src="https://giscus.app/client.js"
           data-repo={import.meta.env.PUBLIC_GISCUS_REPO}
           data-repo-id={import.meta.env.PUBLIC_GISCUS_REPO_ID}
-          data-category="Comments"
-          data-category-id="DIC_kwDONsUwnM4CmYm-"
-          data-mapping="url"
+          data-category={import.meta.env.PUBLIC_GISCUS_CATEGORY}
+          data-category-id={import.meta.env.PUBLIC_GISCUS_CATEGORY_ID}
+          data-mapping="specific"
+          data-term={article.id}
           data-strict="0"
           data-reactions-enabled="1"
           data-emit-metadata="0"
